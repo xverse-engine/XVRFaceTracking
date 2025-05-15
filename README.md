@@ -1,4 +1,3 @@
-
 # Xverse VRFace Tracking
 
 <a href="./LICENSE">
@@ -88,7 +87,7 @@ Print the model inside '3D_model'. Currently, our 3D model is provided for the Q
 
 
 
- 3.Run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/jiangchh1/VRface_Test/blob/main/XverseVRfaceMouthDetectionUI.py). Stream Url is 'http://'+ your ESP32S3 IP +':81/stream'. ONNX Path refers to the file path of the ONNX model on your computer. Users can change the size and direction of ROI through ROI parameters. And change filter parameters through OneEuro parameters.
+ 3.run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/jiangchh1/VRface_Test/blob/main/XverseVRfaceMouthDetectionUI.py). Stream Url is 'http://'+ your ESP32S3 IP +':81/stream'. ONNX Path refers to the file path of the ONNX model on your computer. 
 
 
 
