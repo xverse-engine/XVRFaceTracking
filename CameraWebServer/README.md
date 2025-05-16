@@ -1,1 +1,1 @@
-使用arduino打开 CameraWebServer.ino
+Use arduino for CameraWebServer.ino
