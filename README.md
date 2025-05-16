@@ -32,6 +32,46 @@ We will actively release new features in this repo, please stay tuned. Some futu
 - Windows 10 or 11
 - Python 3.10 or higher
 - VRface and VRCFaceTracking
+
+
+
+
+
+## Install 
+
+
+ 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Upload the CameraWebServer.ino in CameraWebServer to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend).The picture below shows the uploading process in ardunio.
+
+
+  <img src="images/ardunio.png" width="800" />
+
+
+ 2.Install [**VRCFaceTracking**](https://github.com/benaclejames/VRCFaceTracking). Drop the VRCFaceTracking.Xverse.dll and XverseConfig.json into AppData\Roaming\VRCFaceTracking\CustomLibs. If you can't find this path, you can use [**Everything**](https://www.voidtools.com/zh-cn/) for search. If this folder does not exist you can create it, VRCFaceTracking will create it on launch.
+
+
+  <img src="images/CustomLibs.png" width="800" />
+
+
+
+
+ 3.run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/jiangchh1/VRface_Test/blob/main/XverseVRfaceMouthDetectionUI.py). Stream Url is 'http://'+ your ESP32S3 IP +':81/stream'. ONNX Path refers to the file path of the ONNX model on your computer. 
+
+
+
+  <img src="images/VRfaceUI.jpg" width="800" />
+
+
+ 
+
+
+ 4.Open VRCFaceTracking and VRChat. In VRChat, select an avatar that supports VRCFT and enable OCT. If you are unable to animate the avatar's facial expressions, ensure that ports 8888 and 9000 on your local machine are not blocked or already in use.
+
+
+  <img src="images/VRCFT.png" width="800" />
+
+
+
+
 ## Hardware
 
 
@@ -77,37 +117,9 @@ Print the model inside '3D_model'. Currently, our 3D model is provided for the Q
 
 
 
-## Install 
-
-
- 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Upload the CameraWebServer.ino in CameraWebServer to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend).The picture below shows the uploading process in ardunio.
-
-
-  <img src="images/ardunio.png" width="800" />
-
-
- 2.Install [**VRCFaceTracking**](https://github.com/benaclejames/VRCFaceTracking). Drop the VRCFaceTracking.Xverse.dll and XverseConfig.json into AppData\Roaming\VRCFaceTracking\CustomLibs. If you can't find this path, you can use [**Everything**](https://www.voidtools.com/zh-cn/) for search. If this folder does not exist you can create it, VRCFaceTracking will create it on launch.
-
-
-  <img src="images/CustomLibs.png" width="800" />
 
 
 
-
- 3.run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/jiangchh1/VRface_Test/blob/main/XverseVRfaceMouthDetectionUI.py). Stream Url is 'http://'+ your ESP32S3 IP +':81/stream'. ONNX Path refers to the file path of the ONNX model on your computer. 
-
-
-
-  <img src="images/VRfaceUI.jpg" width="800" />
-
-
- 
-
-
- 4.Open VRCFaceTracking and VRChat. In VRChat, select an avatar that supports VRCFT and enable OCT. If you are unable to animate the avatar's facial expressions, ensure that ports 8888 and 9000 on your local machine are not blocked or already in use.
-
-
-  <img src="images/VRCFT.png" width="800" />
 
 
  
