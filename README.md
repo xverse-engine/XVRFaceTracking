@@ -40,7 +40,52 @@ We will actively release new features in this repo, please stay tuned. Some futu
 ## Install 
 
 
- 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Upload the CameraWebServer.ino in CameraWebServer to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend).The picture below shows the uploading process in ardunio.
+ 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Upload the CameraWebServer.ino in CameraWebServer to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend).
+
+ The file structure of [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
+
+```
+├── backend/                    # Backend service core
+│   ├── Dockerfile             # Containerization config
+│   ├── logexp.ipynb           # Experimental log analysis notebook
+│   ├── prestart.sh            # Service pre-launch script
+│   ├── README.md              # Backend-specific documentation
+│   │
+│   └── app/                   # Main application module
+│       ├── main.py            # Service entry point
+│       ├── __init__.py        # Python package initialization
+│       │
+│       ├── infer/             # Inference modules
+│       │   ├── babbleonnx_landmark.py    # ONNX model inference
+│       │   ├── babble_processor.py       # Data processor
+│       │   ├── mediapipe_landmark.py     # MediaPipe implementation
+│       │   ├── one_euro_filter.py        # Motion filter algorithm
+│       │   ├── osc_calibrate_filter.py   # OSC calibration
+│       │   ├── tab.py                   # Data table processor
+│       │   └── xverse_landmark.py       # Custom landmark detection
+│       │
+│       ├── internal/          # Internal utilities
+│       │   ├── camera.py      # Camera interface
+│       │   ├── common.py      # Common functions
+│       │   ├── config.py      # Configuration loader
+│       │   ├── deviceTask.py  # Device task manager
+│       │   ├── image_transforms.py  # Image transformations
+│       │   ├── misc_utils.py  # Miscellaneous utilities
+│       │   └── osc.py        # OSC protocol implementation
+│       │
+│       ├── Models/            # Model storage
+│       │   ├── face_landmarker.task  # MediaPipe model file
+│       │   └── 3MEFFB0E7MSE/         # Custom model
+│       │       └── onnx/             # ONNX format models
+│       │
+│       └── routers/           # API endpoints
+│           ├── faceCapture.py # Facial capture API
+│           └── __init__.py    # Router initialization
+```
+
+ 
+ 
+ The picture below shows the uploading process in ardunio.
 
 
   <img src="images/ardunio.png" width="800" />
