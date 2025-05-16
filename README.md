@@ -127,7 +127,21 @@ This GIF below illustrates the standard installation procedure for our hardware.
 
 
 
+##  Code architecture
  
+  ```
 
+|   LICENSE
+|   README.md
+|   VRCFaceTracking.Xverse.dll
+|   XverseConfig.json
+|   XverseVRfaceMouthDetectionUI.py
++---3D_hardware
++---backend
++---CameraWebServer
+\---images
+
+
+  ```
 
 
