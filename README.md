@@ -82,8 +82,22 @@ We will actively release new features in this repo, please stay tuned. Some futu
 │           ├── faceCapture.py # Facial capture API
 │           └── __init__.py    # Router initialization
 ```
+The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
+```
+├── CameraWebServer/            # Camera web service
+│   ├── app_httpd.cpp          # HTTP server implementation
+│   ├── CameraWebServer.ino    # Arduino main sketch
+│   ├── camera_index.h         # Web interface template
+│   ├── camera_pins.h          # Hardware pin definitions
+│   ├── ci.json               # CI configuration
+│   ├── partitions.csv        # ESP32 partition table
+│   ├── README.md             # Hardware-specific docs
+│   ├── remote_post.cpp       # Remote communication module
+│   └── remote_post.h         # Communication header
+```
 
- 
+
+
  
  The picture below shows the uploading process in ardunio.
 
