@@ -21,7 +21,7 @@ We will actively release new features in this repo, please stay tuned. Some futu
 
 
 
-
+  <img src="images/demo.gif" width="800" />
 
 
 
