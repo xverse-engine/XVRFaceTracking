@@ -91,7 +91,7 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
 │   ├── camera_pins.h          # Hardware pin definitions
 │   ├── ci.json               # CI configuration
 │   ├── partitions.csv        # ESP32 partition table
-│   ├── README.md             # Hardware-specific docs
+│   ├── README.md             # README doc
 │   ├── remote_post.cpp       # Remote communication module
 │   └── remote_post.h         # Communication header
 ```
