@@ -76,8 +76,8 @@ We will actively release new features in this repo, please stay tuned. Some futu
 │       ├── Models/            # Model storage
 │       │   ├── face_landmarker.task  # MediaPipe model file
 │       │   └── 3MEFFB0E7MSE/         # Custom model
-│       │       └── onnx/             # ONNX format models
-│       │
+│       │       └── onnx/             
+│       │           └── vrface0318.onnx      # ONNX format models
 │       └── routers/           # API endpoints
 │           ├── faceCapture.py # Facial capture API
 │           └── __init__.py    # Router initialization
