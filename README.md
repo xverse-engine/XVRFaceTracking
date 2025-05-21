@@ -27,7 +27,7 @@ We will actively release new features in this repo, please stay tuned. Some futu
 
 # Getting Started
 
-You can make your own camera hardware in <Hardware id="Hardware"></Hardware>
+You can make your own camera hardware in [Hardware](#hardware)
 
 
 ## System Requirements
