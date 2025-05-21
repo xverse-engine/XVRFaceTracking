@@ -22,7 +22,7 @@ We will actively release new features in this repo, please stay tuned. Some futu
 
 
   <img src="images/VRface_demo3.gif" width="800" />
-
+  <img src="images/VRface_demo4.gif" width="800" />
 
 
 # Getting Started
