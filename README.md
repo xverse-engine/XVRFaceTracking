@@ -31,7 +31,9 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 
  <img src="images/camera.jpg" width="800" />
+ 
  <img src="images/hardware_install.gif" width="800" />
+ 
  <img src="images/install_demo.png" width="800" />
 
 
@@ -54,6 +56,8 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
  Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill your PC IP, verify and upload.
 
+ <img src="images/remotepostcpp.png" width="800" />
+ 
  You can run 'ipconfig' in terminal to know your PC IP.
  
 
