@@ -27,7 +27,7 @@ We will actively release new features in this repo, please stay tuned. Some futu
 
 # Getting Started
 
-You can make your own camera hardware in [Hardware](#hardware) or contact us via email jiangchanghao@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, step-by-step installation, and how it looks in use.
+You can make your own camera hardware in [Hardware](#hardware) or contact us via email jiangchanghao@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, installation, and how it looks in use.
 
 
  <img src="images/camera.jpg" width="800" />
