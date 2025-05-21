@@ -47,7 +47,10 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 ## Software Install 
 
 
- 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. 
+ 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) via ardunio. Change board type to XIAO_ESP32S3 and fill your WiFi network name and password
+
+
+ 
  Upload the    [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend), which could be used for accuracy evaluation of deep learning models.
 
  The file structure of [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
