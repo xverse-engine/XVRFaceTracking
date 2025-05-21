@@ -66,6 +66,9 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraIPReciver.py) to recieve camera's IP.
 
 
+
+<img src="images/cameraIPreciever.png" width="800" />
+
 The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
 ```
 ├── CameraWebServer/            # Camera web service
