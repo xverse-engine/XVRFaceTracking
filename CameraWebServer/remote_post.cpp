@@ -1,7 +1,7 @@
 #include "remote_post.h"
 
 // 要连接的服务器和端口
-const char* remotehost = "http://192.168.50.26";
+const char* remotehost = "http://"+'YOUR IP'; //YOUR IP
 const int remotehostPort = 8889;
 
 // 生成随机的UUID
