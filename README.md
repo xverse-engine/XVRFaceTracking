@@ -27,7 +27,12 @@ We will actively release new features in this repo, please stay tuned. Some futu
 
 # Getting Started
 
-You can make your own camera hardware in [Hardware](#hardware)
+You can make your own camera hardware in [Hardware](#hardware) or contact us via email jiangchanghao@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, step-by-step installation, and how it looks in use.
+
+
+ <img src="images/camera.jpg" width="800" />
+ <img src="images/hardware_install.gif" width="800" />
+ <img src="images/install_demo.png" width="800" />
 
 
 ## System Requirements
@@ -139,7 +144,7 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
 
 The photograph below documents the finalized camera installation.
 
-  <img src="images/install_demo.png" width="800" />
+ 
 
 You will need [**Xiao_ESP32S3**](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started/)(It has compact size with both wireless and wired support and no need for additional  antennas) and OV2640 with a viewing angle of 160 degrees. These two components, when powered through the Type-C port, can stream the signal to the computer. Alternative device for Xiao_ESP32S3 is Freenove ESP 32-S3 WROOM, which is larger and  more expensive than Xiao_ESP32S3, and lacks support for an external antenna. Alternative cameras with a narrower viewing angle may reduce recognition accuracy and demand higher lighting conditions. 
 
@@ -177,14 +182,14 @@ If you want to connect a battery to the Xiao, we recommend that you purchase a q
 Print the model inside '3D_model'. Currently, our 3D model is provided for the Quest 3. If you require hardware-related assistance or wish to purchase finished products, please contact us via email jiangchanghao@xverse.cn. The picture below shows the hardware we assembled.
 
 
-  <img src="images/camera.jpg" width="800" />
+
 
 
 
 This GIF below illustrates the standard installation procedure for our hardware.
 
 
-  <img src="images/hardware_install.gif" width="800" />
+
 
 
 
