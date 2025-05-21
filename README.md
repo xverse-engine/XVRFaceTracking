@@ -86,10 +86,7 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
 
 
  
- The picture below shows the uploading process in ardunio.
 
-
-  <img src="images/ardunio.png" width="800" />
 
 
  2.Install [**VRCFaceTracking**](https://github.com/benaclejames/VRCFaceTracking). Drop the VRCFaceTracking.Xverse.dll and XverseConfig.json into AppData\Roaming\VRCFaceTracking\CustomLibs. If you can't find this path, you can use [**Everything**](https://www.voidtools.com/zh-cn/) for search. If this folder does not exist you can create it, VRCFaceTracking will create it on launch.
