@@ -27,6 +27,8 @@ We will actively release new features in this repo, please stay tuned. Some futu
 
 # Getting Started
 
+You can make your own camera hardware in --Hardware
+
 
 ## System Requirements
 - Windows 10 or 11
