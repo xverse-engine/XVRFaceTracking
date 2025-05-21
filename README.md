@@ -54,13 +54,13 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
  <img src="images/camerawebserverino.png" width="800" />
 
 
- Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill your PC IP, verify and upload.
+ Open [**remote_post.cpp**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill your PC IP, verify and upload.
 
  <img src="images/remotepostcpp.png" width="800" />
  
  You can run 'ipconfig' in terminal to know your PC IP.
  
-
+<img src="images/ipconfig.png" width="800" />
 
  
  Upload the    [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend), which could be used for accuracy evaluation of deep learning models.
