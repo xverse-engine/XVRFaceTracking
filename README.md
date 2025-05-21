@@ -63,7 +63,7 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 <img src="images/ipconfig.png" width="800" />
 
  
-After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraIPReciver.py) to recieve camera's IP.
+After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraIPReciver.py) to recieve Stream URL.
 
 
 
