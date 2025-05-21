@@ -37,9 +37,9 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-// const char *ssid = "OfficeWiFi-17F";
-const char *ssid = "asus";
-const char *password = "yuanxiang";
+
+const char *ssid = "WIFI";
+const char *password = "WIFI PWD";
 
 void startCameraServer();
 void setupLedFlash(int pin);
