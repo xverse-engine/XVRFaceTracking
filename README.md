@@ -12,13 +12,13 @@
 
 # Introduction
 
- Xverse VRFace Tracking is a lower face tracking project developed by XVERSE Technology Inc. (Shenzhen, China), aiming to provide real-time face tracking with any VR headset in different lighting. Currently, our face tracking project is implemented based on VRface and VRCFaceTracking，leveraging the simplicity and convenience of VRCFT.
+ Xverse VRFace Tracking is a lower face tracking project developed by XVERSE Technology Inc. (Shenzhen, China), aiming to provide real-time face tracking with any VR headset in different lighting. We have trained a new deep learning model to better detect facial expression changes. Currently, our face tracking project is implemented based on VRface and VRCFaceTracking，leveraging the simplicity and convenience of VRCFT.
 
 We will actively release new features in this repo, please stay tuned. Some future updates will contain:
 - [ ] Enhance Facial Expression Prediction
 - [ ] Inplement Tongue Expression Prediction
 
-
+Below are examples of our method applied to different VRFace avatars.
 
 
   <img src="images/VRface_demo3.gif" width="800" />
@@ -31,13 +31,15 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 
  <img src="images/camera.jpg" width="800" />
+ 
  <img src="images/hardware_install.gif" width="800" />
+ 
  <img src="images/install_demo.png" width="800" />
 
 
 ## System Requirements
 - Windows 10 or 11
-- Python 3.10 or higher
+- Python 3.12
 - VRface and VRCFaceTracking
 
 
@@ -46,59 +48,34 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 ## Software Install 
 
+0.Install the dependency packages listed in [**requriements.txt**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/requirements.txt).
 
- 1.Install [**ardunio**](https://www.arduino.cc/en/software/). Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) via ardunio. Change board type to XIAO_ESP32S3 and fill your WiFi network name and password.
+```
+pip install -r requirements.txt
+```
 
- Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill your PC IP, verify and upload.
+ 1.Install [**ardunio**](https://www.arduino.cc/en/software/). 
+ Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) via ardunio. Change board type to XIAO_ESP32S3 and fill your WiFi network name and password.
 
+ <img src="images/camerawebserverino.png" width="800" />
+
+
+ Open [**remote_post.cpp**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill in your PC IP, verify and upload.
+
+ <img src="images/remotepostcpp.png" width="800" />
+ 
  You can run 'ipconfig' in terminal to know your PC IP.
  
-
+<img src="images/ipconfig.png" width="800" />
 
  
- Upload the    [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to the ESP32S3 via Arduino. If the above steps are completed successfully, the ESP32S3 will be able to connect to your Wi-Fi network. And the ESP32S3's IP address can be located via your local Wi-Fi. Or you may run build and run the docker in [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend), which could be used for accuracy evaluation of deep learning models.
+After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraIPReciver.py) to recieve Stream URL.
 
- The file structure of [**backend**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
 
-```
-├── backend/                    # Backend service core
-│   ├── Dockerfile             # Containerization config
-│   ├── logexp.ipynb           # Experimental log analysis notebook
-│   ├── prestart.sh            # Service pre-launch script
-│   ├── README.md              # Backend-specific documentation
-│   │
-│   └── app/                   # Main application module
-│       ├── main.py            # Service entry point
-│       ├── __init__.py        # Python package initialization
-│       │
-│       ├── infer/             # Inference modules
-│       │   ├── babbleonnx_landmark.py    # ONNX model inference
-│       │   ├── babble_processor.py       # Data processor
-│       │   ├── mediapipe_landmark.py     # MediaPipe implementation
-│       │   ├── one_euro_filter.py        # Motion filter algorithm
-│       │   ├── osc_calibrate_filter.py   # OSC calibration
-│       │   ├── tab.py                   # Data table processor
-│       │   └── xverse_landmark.py       # Custom landmark detection
-│       │
-│       ├── internal/          # Internal utilities
-│       │   ├── camera.py      # Camera interface
-│       │   ├── common.py      # Common functions
-│       │   ├── config.py      # Configuration loader
-│       │   ├── deviceTask.py  # Device task manager
-│       │   ├── image_transforms.py  # Image transformations
-│       │   ├── misc_utils.py  # Miscellaneous utilities
-│       │   └── osc.py        # OSC protocol implementation
-│       │
-│       ├── Models/            # Model storage
-│       │   ├── face_landmarker.task  # MediaPipe model file
-│       │   └── 3MEFFB0E7MSE/         # Custom model
-│       │       └── onnx/             
-│       │           └── vrface0318.onnx      # ONNX format models
-│       └── routers/           # API endpoints
-│           ├── faceCapture.py # Facial capture API
-│           └── __init__.py    # Router initialization
-```
-The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
+
+<img src="images/cameraIPreciever.png" width="800" />
+
+The file structure of [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/tree/main/CameraWebServer) is as below:
 ```
 ├── CameraWebServer/            # Camera web service
 │   ├── app_httpd.cpp          # HTTP server implementation
@@ -115,13 +92,11 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
 
 
  
- The picture below shows the uploading process in ardunio.
 
 
-  <img src="images/ardunio.png" width="800" />
 
-
- 2.Install [**VRCFaceTracking**](https://github.com/benaclejames/VRCFaceTracking). Drop the VRCFaceTracking.Xverse.dll and XverseConfig.json into AppData\Roaming\VRCFaceTracking\CustomLibs. If you can't find this path, you can use [**Everything**](https://www.voidtools.com/zh-cn/) for search. If this folder does not exist you can create it, VRCFaceTracking will create it on launch.
+ 2.Install [**VRCFaceTracking**](https://github.com/benaclejames/VRCFaceTracking). 
+ Drop the VRCFaceTracking.Xverse.dll and XverseConfig.json into AppData\Roaming\VRCFaceTracking\CustomLibs. If you can't find this path, you can use [**Everything**](https://www.voidtools.com/zh-cn/) for search. If this folder does not exist you can create it, VRCFaceTracking will create it on launch.
 
 
   <img src="images/CustomLibs.png" width="800" />
@@ -129,7 +104,8 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
 
 
 
- 3.Run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/jiangchh1/VRface_Test/blob/main/XverseVRfaceMouthDetectionUI.py). Stream Url is 'http://'+ your ESP32S3 IP +':81/stream'. ONNX Path refers to the file path of the ONNX model on your computer. Download ONNX file [**here**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/backend/app/Models/3MEFFB0E7MSE/onnx/vrface0318.onnx)
+ 3.Run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/XverseVRfaceMouthDetectionUI.py). 
+ Stream Url is from [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraIPReciver.py) . ONNX Path refers to the file path of the ONNX model on your computer. Download ONNX file [**here**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/backend/app/Models/3MEFFB0E7MSE/onnx/vrface0318.onnx)
 
 
 
@@ -140,7 +116,8 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
  
 
 
- 4.Open VRCFaceTracking and VRChat. In VRChat, select an avatar that supports VRCFT and enable OCT. If you are unable to animate the avatar's facial expressions, ensure that ports 8888 and 9000 on your local machine are not blocked or already in use.
+ 4.Open VRCFaceTracking and VRChat.
+ In VRChat, select an avatar that supports VRCFT and enable OCT. If you are unable to animate the avatar's facial expressions, ensure that ports 8888 and 9000 on your local machine are not blocked or already in use.
 
 
   <img src="images/VRCFT.png" width="800" />
