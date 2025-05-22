@@ -48,7 +48,7 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 ## Software Install 
 
-0.Install the dependency packages listed in [**requriements.txt**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/requriements.txt).
+0.Install the dependency packages listed in [**requriements.txt**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/requirements.txt).
 
 ```
 pip install -r requirements.txt
