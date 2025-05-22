@@ -50,10 +50,6 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 The file structure of this project is as below:
 ```
-
-
-
-
 ├── software/                        
 │   ├── CameraIPReciver.py           # camera IP 
 │   └── XverseVRfaceMouthDetectionUI.py # lower face detection UI
@@ -71,15 +67,15 @@ The file structure of this project is as below:
 │   ├── VRCFaceTracking.Xverse.dll   # VRCFT plugin
 │   └── XverseConfig.json            # plugin json
 ├── images/                          # pictures for readme
-│   └── ...                          
+│   └── ...
+├── models/                          
+│   └── XVRFaceTracking.onnx         # onnx model for lower face tracking         
 ├── 3D_hardware/                     # hardware files for 3D print 
 │   ├── hardware-led.blend
 │   └── hardware-led.stl
 ├── requirements.txt                 # Python requriements
 ├── README.md                        
 ├── LICENSE                          
-
-
 
 ```
 
