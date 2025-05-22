@@ -100,6 +100,10 @@ pip install -r requirements.txt
  
 <img src="images/ipconfig.png" width="800" />
 
+Upon successful import, the system will display the notification shown in the figure below.
+
+
+
  
 After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/software/CameraIPReciver.py) to recieve Stream URL.
 
