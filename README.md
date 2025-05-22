@@ -98,7 +98,7 @@ pip install -r requirements.txt
 
  <img src="images/remotepostcpp.png" width="800" />
  
- You can run 'ipconfig' in terminal to know your PC IP.
+ You can run 'ipconfig' in terminal to know your PC IP. Ensure that ports 8889 on your PC is not blocked or already in use.
  
 <img src="images/ipconfig.png" width="800" />
 
