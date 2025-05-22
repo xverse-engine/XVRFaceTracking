@@ -187,7 +187,7 @@ If you want to connect a battery to the Xiao, we recommend that you purchase a q
 
 
 
-Print the model inside '3D_model'. Currently, our 3D model is provided for the Quest 3. If you require hardware-related assistance or wish to purchase finished products, please contact us via email jiangchanghao@xverse.cn. The picture below shows the hardware we assembled.
+Print the model inside folder '3D_hardware'. Currently, our 3D model is provided for the Quest 3. If you require hardware-related assistance or wish to purchase finished products, please contact us via email jiangchanghao@xverse.cn. The picture below shows the hardware we assembled.
 
 
 
