@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+opencv-python
+numpy
+onnxruntime
+onnxruntime-gpu
+python-osc
+PyQt5
