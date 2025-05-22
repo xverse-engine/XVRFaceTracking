@@ -129,8 +129,8 @@ class CamOnnxOscApp(QtWidgets.QWidget):
 
     def init_ui(self):
         layout = QtWidgets.QFormLayout()
-        self.stream_url = QtWidgets.QLineEdit("http://10.0.33.11:81/stream")
-        self.onnx_path = QtWidgets.QLineEdit(r"\Models\VRface_0318\onnx\model.onnx")
+        self.stream_url = QtWidgets.QLineEdit("81/stream")
+        self.onnx_path = QtWidgets.QLineEdit(r"..\Models\XVRFaceTracking.onnx")
         self.osc_ip = QtWidgets.QLineEdit("127.0.0.1")
         self.osc_port = QtWidgets.QSpinBox()
         self.osc_port.setRange(1, 65535)
