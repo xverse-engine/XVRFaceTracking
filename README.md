@@ -60,7 +60,7 @@ pip install -r requirements.txt
  <img src="images/camerawebserverino.png" width="800" />
 
 
- Open [**remote_post.cpp**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill your PC IP, verify and upload.
+ Open [**remote_post.cpp**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/remote_post.cpp)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/). Fill in your PC IP, verify and upload.
 
  <img src="images/remotepostcpp.png" width="800" />
  
