@@ -145,7 +145,7 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 
   <img src="images/VRCFT.png" width="800" />
 
-  <img src="images/OSCVR.png" width="800" />
+  <img src="images/OSCVR.jpg" width="800" />
 
 
 
