@@ -149,7 +149,6 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 ## Hardware
 
 
-If you have any other face tracking hardware made of Xiao_ESP32S3(https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started/), you can directly use our solution without developing new hardware.
 
  
 
