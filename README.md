@@ -75,7 +75,7 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 
 <img src="images/cameraIPreciever.png" width="800" />
 
-The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_Test/tree/main/backend) is as below:
+The file structure of [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/tree/main/CameraWebServer) is as below:
 ```
 ├── CameraWebServer/            # Camera web service
 │   ├── app_httpd.cpp          # HTTP server implementation
@@ -104,7 +104,7 @@ The file structure of [**CameraWebServer**](https://github.com/jiangchh1/VRface_
 
 
 
- 3.Run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/jiangchh1/VRface_Test/blob/main/XverseVRfaceMouthDetectionUI.py). 
+ 3.Run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/XverseVRfaceMouthDetectionUI.py). 
  Stream Url is from [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraIPReciver.py) . ONNX Path refers to the file path of the ONNX model on your computer. Download ONNX file [**here**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/backend/app/Models/3MEFFB0E7MSE/onnx/vrface0318.onnx)
 
 
