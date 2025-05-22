@@ -98,7 +98,7 @@ pip install -r requirements.txt
 
  <img src="images/remotepostcpp.png" width="800" />
  
- You can run 'ipconfig' in terminal to know your PC IP. Ensure that ports 8889 on your PC is not blocked or already in use.
+ You can run 'ipconfig' in terminal to know your PC IP. 
  
 <img src="images/ipconfig.png" width="800" />
 
@@ -107,7 +107,7 @@ Upon successful import, the arduino will display the notification shown in the f
 
 <img src="images/ardi_sucess.png" width="800" />
  
-After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/software/CameraIPReciver.py) to recieve Stream URL.
+After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) to ESP32S3, run  [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/software/CameraIPReciver.py) to recieve Stream URL. Ensure that ports 8889 on your PC is not blocked or already in use.
 
 
 
