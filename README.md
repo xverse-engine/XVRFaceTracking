@@ -108,43 +108,7 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 <img src="images/cameraIPreciever.png" width="800" />
 
 The file structure of [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/tree/main/CameraWebServer) is as below:
-```
 
-
-
-
-├── software/                        
-│   ├── CameraIPReciver.py           # camera IP 
-│   └── XverseVRfaceMouthDetectionUI.py # lower face detection UI
-├── CameraWebServer/            # Camera web service
-│   ├── app_httpd.cpp          # HTTP server implementation
-│   ├── CameraWebServer.ino    # Arduino main sketch
-│   ├── camera_index.h         # Web interface template
-│   ├── camera_pins.h          # Hardware pin definitions
-│   ├── ci.json               # CI configuration
-│   ├── partitions.csv        # ESP32 partition table
-│   ├── README.md             # README doc
-│   ├── remote_post.cpp       # Remote communication module
-│   └── remote_post.h         # Communication header
-├── assets/                          
-│   ├── VRCFaceTracking.Xverse.dll   # VRCFT plugin
-│   └── XverseConfig.json            # plugin json
-├── images/                         
-│   └── ...                          
-├── 3D_hardware/                     # hardware files for 3D print 
-│   ├── hardware-led.blend
-│   └── hardware-led.stl
-├── requirements.txt                 # Python requriements
-├── README.md                        
-├── LICENSE                          
-
-
-
-```
-
-
-
- 
 
 
 
