@@ -107,7 +107,7 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 
 <img src="images/cameraIPreciever.png" width="800" />
 
-The file structure of [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/tree/main/CameraWebServer) is as below:
+
 
 
 
