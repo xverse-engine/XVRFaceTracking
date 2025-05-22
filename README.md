@@ -189,7 +189,6 @@ Print the model inside '3D_model'. Currently, our 3D model is provided for the Q
 
 
 
-This GIF below illustrates the standard installation procedure for our hardware.
 
 
 
