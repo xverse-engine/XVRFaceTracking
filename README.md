@@ -102,7 +102,7 @@ pip install -r requirements.txt
  
 <img src="images/ipconfig.png" width="800" />
 
-Upon successful import, the arduino will display the notification shown in the figure below.
+After successful upload, the arduino will display the notification shown in the figure below.
 
 
 <img src="images/ardi_sucess.png" width="800" />
