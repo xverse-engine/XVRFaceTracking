@@ -128,7 +128,7 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 
 
  3.Run [**XverseVRfaceMouthDetectionUI.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/software/XverseVRfaceMouthDetectionUI.py). 
- Stream Url is from [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/software/CameraIPReciver.py) Remeber to keep 'http://' in Stream Url. ONNX file is our pretrained deep learning model in folder [**model**](https://github.com/xverse-engine/XVRFaceTracking/tree/main/models). ONNX Path refers to the file path of the ONNX model on your computer.  
+ Stream Url is from [**CameraIPReciver.py**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/software/CameraIPReciver.py)(step 1). Remeber to keep 'http://' in Stream Url. ONNX file is our pretrained deep learning model in folder [**model**](https://github.com/xverse-engine/XVRFaceTracking/tree/main/models). ONNX Path refers to the file path of the ONNX model on your computer. Generally, the default ONNX path should work.
 
 
 
