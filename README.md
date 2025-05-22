@@ -48,6 +48,7 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 ## Software Install 
 
+0.Install the dependency packages listed in [**requriements.txt**](https://www.arduino.cc/en/software/)
 
  1.Install [**ardunio**](https://www.arduino.cc/en/software/). 
  Connect ESP32S3 to your PC with a micro-USB/mini-USB/USB type-c cable. Open [**CameraWebServer.ino**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/CameraWebServer.ino)       in [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTracking/blob/main/CameraWebServer/) via ardunio. Change board type to XIAO_ESP32S3 and fill your WiFi network name and password.
