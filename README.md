@@ -140,11 +140,12 @@ After uploading [**CameraWebServer**](https://github.com/xverse-engine/XVRFaceTr
 
 
  4.Open VRCFaceTracking and VRChat.
- In VRChat, select an avatar that supports VRCFT and enable OCT. If you are unable to animate the avatar's facial expressions, ensure that ports 8888 and 9000 on your local machine are not blocked or already in use. If you are unable to establish an OSC connection between your PC and VR, please refer to [**VRCFT**](https://docs.vrcft.io/docs/vrcft-software/vrcft) website.
+ In VRChat, select an avatar that supports VRCFT and enable OCT. If you are unable to animate the avatar's facial expressions, ensure that ports 8888 and 9000 on your local machine are not blocked or already in use. If you are unable to establish an OSC connection between your PC and VR, please refer to [**VRCFT**](https://docs.vrcft.io/docs/vrcft-software/vrcft) website. Remember to open OSC in your VR device.
 
 
   <img src="images/VRCFT.png" width="800" />
 
+  <img src="images/OSCVR.png" width="800" />
 
 
 
