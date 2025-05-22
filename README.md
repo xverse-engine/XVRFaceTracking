@@ -39,7 +39,7 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 
 ## System Requirements
 - Windows 10 or 11
-- Python 3.10 or higher
+- Python 3.12
 - VRface and VRCFaceTracking
 
 
