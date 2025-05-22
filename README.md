@@ -51,29 +51,29 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 The file structure of this project is as below:
 ```
 ├── software/                        
-│   ├── CameraIPReciver.py           # camera IP 
+│   ├── CameraIPReciver.py              # camera IP 
 │   └── XverseVRfaceMouthDetectionUI.py # lower face detection UI
-├── CameraWebServer/            # Camera web service
-│   ├── app_httpd.cpp          # HTTP server implementation
-│   ├── CameraWebServer.ino    # Arduino main sketch
-│   ├── camera_index.h         # Web interface template
-│   ├── camera_pins.h          # Hardware pin definitions
-│   ├── ci.json               # CI configuration
-│   ├── partitions.csv        # ESP32 partition table
-│   ├── README.md             # README doc
-│   ├── remote_post.cpp       # Remote communication module
-│   └── remote_post.h         # Communication header
+├── CameraWebServer/                    # Camera web service
+│   ├── app_httpd.cpp                   # HTTP server implementation
+│   ├── CameraWebServer.ino             # Arduino main sketch
+│   ├── camera_index.h                  # Web interface template
+│   ├── camera_pins.h                   # Hardware pin definitions
+│   ├── ci.json                         # CI configuration
+│   ├── partitions.csv                  # ESP32 partition table
+│   ├── README.md                       # README doc
+│   ├── remote_post.cpp                 # Remote communication module
+│   └── remote_post.h                   # Communication header
 ├── assets/                          
-│   ├── VRCFaceTracking.Xverse.dll   # VRCFT plugin
-│   └── XverseConfig.json            # plugin json
-├── images/                          # pictures for readme
+│   ├── VRCFaceTracking.Xverse.dll      # VRCFT plugin
+│   └── XverseConfig.json               # plugin json
+├── images/                             # pictures for readme
 │   └── ...
 ├── models/                          
-│   └── XVRFaceTracking.onnx         # onnx model for lower face tracking         
-├── 3D_hardware/                     # hardware files for 3D print 
+│   └── XVRFaceTracking.onnx            # onnx model for lower face tracking         
+├── 3D_hardware/                        # hardware files for 3D print 
 │   ├── hardware-led.blend
 │   └── hardware-led.stl
-├── requirements.txt                 # Python requriements
+├── requirements.txt                    # Python requriements
 ├── README.md                        
 ├── LICENSE                          
 
