@@ -299,7 +299,7 @@ class CamOnnxOscApp(QtWidgets.QWidget):
             # input_img = np.expand_dims(input_img, axis=0)
             try:
                 output = sess.run(['arkits'], {input_name: frame})
-                print(output)
+                # print(output)
                 # print(output)
                 output_list = output[0].tolist()
                 # print(f"ONNX输出长度: {len(output_list)}，内容: {output_list}")
@@ -322,7 +322,7 @@ class CamOnnxOscApp(QtWidgets.QWidget):
                     if not hasattr(self, 'filter'):
                         self.filter = OneEuroFilter(arr, min_cutoff=self.min_cutoff.value(), beta=self.beta.value(), d_cutoff=self.d_cutoff.value())
                     arr = self.filter(arr)
-                print(arr)
+                # print(arr)
                 # OSC发送（与原工程一致）
                 location=''
                 
