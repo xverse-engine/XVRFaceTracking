@@ -12,12 +12,12 @@
 
 # Introduction
 
- Xverse VRFace Tracking is a lower face tracking project developed by XVERSE Technology Inc. (Shenzhen, China), aiming to provide real-time face tracking with any VR headset in different lighting. We have trained a new deep learning model to better detect facial expression changes. Currently, our face tracking project is implemented based on VRface and VRCFaceTracking，leveraging the simplicity and convenience of VRCFT.
+ Xverse VRFace Tracking is a lower face tracking solution developed by XVERSE Technology Inc. (Shenzhen, China), aiming to provide real-time face tracking with any VR headset in different lighting. We have trained a new deep learning model to better detect facial expression changes. Currently, our face tracking project is implemented based on VRface and VRCFaceTracking，leveraging the simplicity and convenience of VRCFT.
 
 We will actively release new features in this repo, please stay tuned. Some future updates will contain:
 - [ ] Enhance Facial Expression Prediction
 - [ ] Inplement Tongue Expression Prediction
-
+- [ ] Extended Hardware Support for VR Devices
 Below are examples of our method applied to different VRFace avatars.
 
 
