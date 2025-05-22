@@ -51,7 +51,7 @@ You can make your own camera hardware in [Hardware](#hardware) or contact us via
 The file structure of this project is as below:
 ```
 ├── software/                        
-│   ├── CameraIPReciver.py              # camera IP 
+│   ├── CameraIPReciver.py              # camera IP reciver
 │   └── XverseVRfaceMouthDetectionUI.py # lower face detection UI
 ├── CameraWebServer/                    # Camera web service
 │   ├── app_httpd.cpp                   # HTTP server implementation
