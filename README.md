@@ -65,18 +65,18 @@ The file structure of this project is as below:
 │   ├── README.md                       # README doc
 │   ├── remote_post.cpp                 # Remote communication module
 │   └── remote_post.h                   # Communication header
-├── assets/                          
+├── assets/                             # plugin folder
 │   ├── VRCFaceTracking.Xverse.dll      # VRCFT plugin
 │   └── XverseConfig.json               # plugin json
 ├── images/                             # pictures for readme
 │   └── ...
-├── models/                          
+├── models/                             # onnx model
 │   └── XVRFaceTracking.onnx            # onnx model for lower face tracking         
 ├── 3D_hardware/                        # hardware files for 3D print 
-│   ├── hardware-led.blend
-│   └── hardware-led.stl
+│   ├── hardware-led.blend              # blend file for 3D print
+│   └── hardware-led.stl                # stl file for 3D print
 ├── requirements.txt                    # Python requriements
-├── README.md                        
+├── README.md                           
 ├── LICENSE                          
 
 ```
