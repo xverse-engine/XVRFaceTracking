@@ -29,7 +29,7 @@ Below are examples of our method applied to different VRFace avatars.
 
 # Getting Started
 
-You can make your own camera hardware following [Hardware](#hardware) or contact us via email jiangchanghao@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, installation, and how it looks in use.
+You can make your own camera hardware following [Hardware](#hardware) or contact us via email xengine@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, installation, and how it looks in use.
 
 
  <img src="images/camera.jpg" width="800" />
@@ -188,7 +188,7 @@ If you want to connect a battery to the Xiao, we recommend that you purchase a q
 
 
 
-Print the model inside folder '3D_hardware'. Currently, our 3D model is provided for the Quest 3. If you require hardware-related assistance or wish to purchase finished products, please contact us via email jiangchanghao@xverse.cn. The picture below shows the hardware we assembled.
+Print the model inside folder '3D_hardware'. Currently, our 3D model is provided for the Quest 3. If you require hardware-related assistance or wish to purchase finished products, please contact us via email xengine@xverse.cn. 
 
 
 
