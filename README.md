@@ -29,7 +29,7 @@ Below are examples of our method applied to different VRFace avatars.
 
 # Getting Started
 
-You can make your own camera hardware in [Hardware](#hardware) or contact us via email jiangchanghao@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, installation, and how it looks in use.
+You can make your own camera hardware following [Hardware](#hardware) or contact us via email jiangchanghao@xverse.cn to purchase finished products. Below are visuals of the camera’s appearance, installation, and how it looks in use.
 
 
  <img src="images/camera.jpg" width="800" />
